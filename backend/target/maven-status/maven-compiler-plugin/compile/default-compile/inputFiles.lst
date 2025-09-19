@@ -1,0 +1,14 @@
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/enums/TransactionStatus.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/model/PumpOrCharger.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/enums/TierCode.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/enums/Unit.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/enums/PointsReason.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/enums/PetrolGrade.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/model/Tier.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/enums/FuelKind.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/enums/PressureUnit.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/enums/UserRole.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/CashbackApplication.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/model/User.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/enums/StationType.java
+/home/runner/work/cashback-binkat/cashback-binkat/backend/src/main/java/com/binkat/cashback/model/Station.java

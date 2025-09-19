@@ -1,0 +1,103 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+
+spring:
+  application:
+    name: binkat-cashback-backend
+  
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:binkat_oil}
+    username: ${DB_USERNAME:binkat}
+    password: ${DB_PASSWORD:binkat123}
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        default_schema: public
+        jdbc:
+          time_zone: Asia/Tashkent
+  
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+    contexts: ${LIQUIBASE_CONTEXTS:dev}
+  
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PASSWORD:}
+    timeout: 2000ms
+    jedis:
+      pool:
+        max-active: 10
+        max-idle: 10
+        min-idle: 1
+  
+  security:
+    jwt:
+      secret: ${JWT_SECRET:binkat-oil-super-secret-key-change-in-production}
+      access-token-expiration: ${JWT_ACCESS_EXPIRATION:900000} # 15 minutes
+      refresh-token-expiration: ${JWT_REFRESH_EXPIRATION:604800000} # 7 days
+
+# Application specific configurations
+app:
+  timezone: Asia/Tashkent
+  currency: UZS
+  
+  points:
+    redemption-rate-uzs-per-point: ${REDEMPTION_RATE_UZS_PER_POINT:10}
+    min-redeem-points: ${MIN_REDEEM_POINTS:100}
+    max-discount-pct: ${MAX_DISCOUNT_PCT:50}
+    expiry-days: ${POINTS_EXPIRY_DAYS:365}
+    tier-evaluation-days: ${TIER_EVALUATION_DAYS:90}
+  
+  propane:
+    default-unit: LITER # or KG based on system config
+    pressure-units: [BAR, ATM]
+
+# Actuator configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: when-authorized
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+# OpenAPI Documentation
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+  info:
+    title: Binkat Oil Cashback API
+    description: API for Binkat Oil loyalty and cashback platform
+    version: 1.0.0
+    contact:
+      name: Binkat Oil
+      email: api@binkat.uz
+
+# Logging
+logging:
+  level:
+    com.binkat: ${LOG_LEVEL:INFO}
+    org.springframework.security: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{traceId}] %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{traceId}] %logger{36} - %msg%n"
+  file:
+    name: logs/binkat-backend.log
