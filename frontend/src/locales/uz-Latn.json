@@ -1,0 +1,108 @@
+{
+  "app": {
+    "name": "Binkat Oil",
+    "tagline": "Sadoqat va Keshbek Platformasi"
+  },
+  "nav": {
+    "home": "Asosiy",
+    "wallet": "Hamyon",
+    "stations": "Stansiyalar",
+    "history": "Tarix",
+    "profile": "Profil"
+  },
+  "auth": {
+    "login": "Kirish",
+    "register": "Ro'yxatdan o'tish",
+    "logout": "Chiqish",
+    "email": "Email",
+    "password": "Parol",
+    "confirmPassword": "Parolni tasdiqlash",
+    "name": "To'liq ism",
+    "phone": "Telefon raqami",
+    "loginSuccess": "Muvaffaqiyatli kirildi",
+    "registerSuccess": "Muvaffaqiyatli ro'yxatdan o'tildi",
+    "loginError": "Noto'g'ri ma'lumotlar",
+    "registerError": "Ro'yxatdan o'tishda xatolik"
+  },
+  "wallet": {
+    "balance": "Balans",
+    "points": "Ballar",
+    "estimatedValue": "Taxminiy qiymat",
+    "earnedToday": "Bugun ishlangan",
+    "earned30Days": "30 kun ichida ishlangan",
+    "redeem": "Ballarni ishlatish",
+    "redeemPoints": "{points} ball ishlatish",
+    "redeemSuccess": "Ballar muvaffaqiyatli ishlatildi",
+    "redeemError": "Ballarni ishlatishda xatolik",
+    "scanAtPump": "Pompada skanerlash"
+  },
+  "stations": {
+    "title": "Yoqilg'i stansiyalari",
+    "findNearby": "Yaqinni topish",
+    "petrol92": "Benzin 92",
+    "petrol95": "Benzin 95",
+    "diesel": "Dizel",
+    "propane": "Propan",
+    "evCharging": "Elektr quvvatlash",
+    "useHere": "Bu yerda ishlatish",
+    "pricePerLiter": "litr uchun",
+    "pricePerKwh": "kWh uchun",
+    "pricePerKg": "kg uchun"
+  },
+  "history": {
+    "title": "Tranzaksiyalar tarixi",
+    "noTransactions": "Hali tranzaksiyalar yo'q",
+    "refill": "To'ldirish",
+    "earned": "Ishlangan",
+    "spent": "Sarflangan",
+    "discount": "Chegirma",
+    "date": "Sana",
+    "station": "Stansiya"
+  },
+  "profile": {
+    "title": "Profil",
+    "language": "Til",
+    "notifications": "Bildirishnomalar",
+    "dataExport": "Ma'lumotlarni eksport qilish",
+    "deleteAccount": "Hisobni o'chirish",
+    "tier": "Daraja",
+    "silver": "Kumush",
+    "gold": "Oltin",
+    "platinum": "Platina"
+  },
+  "admin": {
+    "dashboard": "Admin paneli",
+    "analytics": "Analitika",
+    "overview": "Umumiy ko'rinish",
+    "leaderboards": "Reytinglar",
+    "topByRefills": "To'ldirishlar bo'yicha eng yaxshi",
+    "topByVolume": "Hajm bo'yicha eng yaxshi",
+    "totalRefills": "Jami to'ldirishlar",
+    "totalRevenue": "Jami daromad",
+    "activeCustomers": "Faol mijozlar",
+    "export": "Eksport"
+  },
+  "operator": {
+    "pos": "Sotuv nuqtasi",
+    "scanCustomer": "Mijoz QR kodini skaner qilish",
+    "selectFuel": "Yoqilg'i turini tanlash",
+    "enterQuantity": "Miqdorni kiriting",
+    "confirmSale": "Sotuvni tasdiqlash"
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "error": "Xatolik",
+    "success": "Muvaffaqiyat",
+    "cancel": "Bekor qilish",
+    "confirm": "Tasdiqlash",
+    "save": "Saqlash",
+    "edit": "Tahrirlash",
+    "delete": "O'chirish",
+    "back": "Orqaga",
+    "next": "Keyingi",
+    "close": "Yopish",
+    "search": "Qidirish",
+    "filter": "Filtr",
+    "uzs": "so'm"
+  }
+}
