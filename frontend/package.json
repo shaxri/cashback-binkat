@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "type-check": "vue-tsc --build --force"
+    "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
