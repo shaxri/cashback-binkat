@@ -1,0 +1,89 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: binkat-postgres
+    environment:
+      POSTGRES_DB: binkat_oil
+      POSTGRES_USER: binkat
+      POSTGRES_PASSWORD: binkat123
+      TZ: Asia/Tashkent
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/src/main/resources/db/init:/docker-entrypoint-initdb.d
+    networks:
+      - binkat-network
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: binkat-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - binkat-network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: binkat-backend
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: binkat_oil
+      DB_USERNAME: binkat
+      DB_PASSWORD: binkat123
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      JWT_SECRET: ${JWT_SECRET:-binkat-oil-jwt-secret-key-change-in-production}
+      REDEMPTION_RATE_UZS_PER_POINT: ${REDEMPTION_RATE_UZS_PER_POINT:-10}
+      MIN_REDEEM_POINTS: ${MIN_REDEEM_POINTS:-100}
+      MAX_DISCOUNT_PCT: ${MAX_DISCOUNT_PCT:-50}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - binkat-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/v1/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: binkat-frontend
+    environment:
+      VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8080/api/v1}
+      VITE_APP_TITLE: ${VITE_APP_TITLE:-Binkat Oil}
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    networks:
+      - binkat-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  binkat-network:
+    driver: bridge

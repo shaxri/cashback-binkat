@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-extension-uuid-ossp
+      author: binkat
+      changes:
+        - sql:
+            sql: CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+            
+  - include:
+      file: db/changelog/001-create-tiers-table.xml
+      
+  - include:
+      file: db/changelog/002-create-users-table.xml
+      
+  - include:
+      file: db/changelog/003-create-stations-table.xml
+      
+  - include:
+      file: db/changelog/004-create-pump-or-chargers-table.xml
+      
+  - include:
+      file: db/changelog/005-create-price-plans-table.xml
+      
+  - include:
+      file: db/changelog/006-create-points-rules-table.xml
+      
+  - include:
+      file: db/changelog/007-create-wallets-table.xml
+      
+  - include:
+      file: db/changelog/008-create-refill-transactions-table.xml
+      
+  - include:
+      file: db/changelog/009-create-points-ledger-table.xml
+      
+  - include:
+      file: db/changelog/010-create-redemptions-table.xml
+      
+  - include:
+      file: db/changelog/011-create-promotions-table.xml
+      
+  - include:
+      file: db/changelog/012-create-operator-shifts-table.xml
+      
+  - include:
+      file: db/changelog/013-create-refill-telemetry-table.xml
+      
+  - include:
+      file: db/changelog/900-seed-demo-data.xml
+      contexts: dev

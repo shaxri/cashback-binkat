@@ -1,0 +1,108 @@
+{
+  "app": {
+    "name": "Binkat Oil",
+    "tagline": "Loyalty & Cashback Platform"
+  },
+  "nav": {
+    "home": "Home",
+    "wallet": "Wallet",
+    "stations": "Stations",
+    "history": "History",
+    "profile": "Profile"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "loginSuccess": "Login successful",
+    "registerSuccess": "Registration successful",
+    "loginError": "Invalid credentials",
+    "registerError": "Registration failed"
+  },
+  "wallet": {
+    "balance": "Balance",
+    "points": "Points",
+    "estimatedValue": "Estimated Value",
+    "earnedToday": "Earned Today",
+    "earned30Days": "Earned in 30 Days",
+    "redeem": "Redeem Points",
+    "redeemPoints": "Redeem {points} points",
+    "redeemSuccess": "Points redeemed successfully",
+    "redeemError": "Failed to redeem points",
+    "scanAtPump": "Scan at Pump"
+  },
+  "stations": {
+    "title": "Fuel Stations",
+    "findNearby": "Find Nearby",
+    "petrol92": "Petrol 92",
+    "petrol95": "Petrol 95",
+    "diesel": "Diesel",
+    "propane": "Propane",
+    "evCharging": "EV Charging",
+    "useHere": "Use Here",
+    "pricePerLiter": "per liter",
+    "pricePerKwh": "per kWh",
+    "pricePerKg": "per kg"
+  },
+  "history": {
+    "title": "Transaction History",
+    "noTransactions": "No transactions yet",
+    "refill": "Refill",
+    "earned": "Earned",
+    "spent": "Spent",
+    "discount": "Discount",
+    "date": "Date",
+    "station": "Station"
+  },
+  "profile": {
+    "title": "Profile",
+    "language": "Language",
+    "notifications": "Notifications",
+    "dataExport": "Export Data",
+    "deleteAccount": "Delete Account",
+    "tier": "Tier",
+    "silver": "Silver",
+    "gold": "Gold",
+    "platinum": "Platinum"
+  },
+  "admin": {
+    "dashboard": "Admin Dashboard",
+    "analytics": "Analytics",
+    "overview": "Overview",
+    "leaderboards": "Leaderboards",
+    "topByRefills": "Top by Refills",
+    "topByVolume": "Top by Volume",
+    "totalRefills": "Total Refills",
+    "totalRevenue": "Total Revenue",
+    "activeCustomers": "Active Customers",
+    "export": "Export"
+  },
+  "operator": {
+    "pos": "Point of Sale",
+    "scanCustomer": "Scan Customer QR",
+    "selectFuel": "Select Fuel Type",
+    "enterQuantity": "Enter Quantity",
+    "confirmSale": "Confirm Sale"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "search": "Search",
+    "filter": "Filter",
+    "uzs": "UZS"
+  }
+}

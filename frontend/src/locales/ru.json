@@ -1,0 +1,108 @@
+{
+  "app": {
+    "name": "Binkat Oil",
+    "tagline": "Платформа лояльности и кэшбэка"
+  },
+  "nav": {
+    "home": "Главная",
+    "wallet": "Кошелек",
+    "stations": "Станции",
+    "history": "История",
+    "profile": "Профиль"
+  },
+  "auth": {
+    "login": "Вход",
+    "register": "Регистрация",
+    "logout": "Выход",
+    "email": "Email",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердить пароль",
+    "name": "Полное имя",
+    "phone": "Номер телефона",
+    "loginSuccess": "Успешный вход",
+    "registerSuccess": "Успешная регистрация",
+    "loginError": "Неверные данные",
+    "registerError": "Ошибка регистрации"
+  },
+  "wallet": {
+    "balance": "Баланс",
+    "points": "Баллы",
+    "estimatedValue": "Примерная стоимость",
+    "earnedToday": "Заработано сегодня",
+    "earned30Days": "Заработано за 30 дней",
+    "redeem": "Потратить баллы",
+    "redeemPoints": "Потратить {points} баллов",
+    "redeemSuccess": "Баллы успешно потрачены",
+    "redeemError": "Ошибка при трате баллов",
+    "scanAtPump": "Сканировать на заправке"
+  },
+  "stations": {
+    "title": "АЗС",
+    "findNearby": "Найти рядом",
+    "petrol92": "Бензин 92",
+    "petrol95": "Бензин 95",
+    "diesel": "Дизель",
+    "propane": "Пропан",
+    "evCharging": "Зарядка электромобилей",
+    "useHere": "Использовать здесь",
+    "pricePerLiter": "за литр",
+    "pricePerKwh": "за кВт⋅ч",
+    "pricePerKg": "за кг"
+  },
+  "history": {
+    "title": "История транзакций",
+    "noTransactions": "Пока нет транзакций",
+    "refill": "Заправка",
+    "earned": "Заработано",
+    "spent": "Потрачено",
+    "discount": "Скидка",
+    "date": "Дата",
+    "station": "Станция"
+  },
+  "profile": {
+    "title": "Профиль",
+    "language": "Язык",
+    "notifications": "Уведомления",
+    "dataExport": "Экспорт данных",
+    "deleteAccount": "Удалить аккаунт",
+    "tier": "Уровень",
+    "silver": "Серебряный",
+    "gold": "Золотой",
+    "platinum": "Платиновый"
+  },
+  "admin": {
+    "dashboard": "Панель администратора",
+    "analytics": "Аналитика",
+    "overview": "Обзор",
+    "leaderboards": "Рейтинги",
+    "topByRefills": "Лучшие по заправкам",
+    "topByVolume": "Лучшие по объему",
+    "totalRefills": "Всего заправок",
+    "totalRevenue": "Общий доход",
+    "activeCustomers": "Активные клиенты",
+    "export": "Экспорт"
+  },
+  "operator": {
+    "pos": "Касса",
+    "scanCustomer": "Сканировать QR клиента",
+    "selectFuel": "Выбрать тип топлива",
+    "enterQuantity": "Введите количество",
+    "confirmSale": "Подтвердить продажу"
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успех",
+    "cancel": "Отмена",
+    "confirm": "Подтвердить",
+    "save": "Сохранить",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "back": "Назад",
+    "next": "Далее",
+    "close": "Закрыть",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "uzs": "сум"
+  }
+}
